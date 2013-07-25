@@ -12,6 +12,7 @@ import play.api.libs.json.{ Json, JsValue }
 
 import org.openqa.selenium._
 import org.openqa.selenium.firefox._
+import org.openqa.selenium.chrome._
 import org.openqa.selenium.htmlunit._
 
 import scala.concurrent.Await
@@ -34,6 +35,7 @@ trait PlayRunners {
 
   val HTMLUNIT = classOf[HtmlUnitDriver]
   val FIREFOX = classOf[FirefoxDriver]
+  val CHROME = classOf[ChromeDriver]
 
   /**
    * Executes a block of code in a running application.
